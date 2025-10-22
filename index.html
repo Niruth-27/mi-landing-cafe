@@ -1,56 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Primera Landing Page - Café Nicolás</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="script.js"></script>
 
-  <!-- Google Fonts (Inter) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="hero">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <h1>Bienvenido a Café Nicolás</h1>
-          <p>El mejor café de la ciudad — sabor artesanal y ambiente acogedor.</p>
-          <a class="btn" href="#contact">Reserva tu mesa</a>
-        </div>
 
-        <div class="hero-img">
-          <!-- Asegúrate de subir 'tu-imagen.jpg' a la misma carpeta o usa una URL válida -->
-          <img src="tu-imagen.jpg" alt="Taza de café" loading="lazy" />
-        </div>
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h2 class="logo">Café Niruth</h2>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO PRINCIPAL -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>El sabor del café artesanal</h1>
+        <p>Disfruta una experiencia única con nuestros granos seleccionados, tostados con pasión y servidos con arte.</p>
+        <a href="#menu" class="btn-primary">Ver menú</a>
       </div>
-    </header>
 
-    <section>
-      <img src="http://www.pixelstalk.net/wp-content/uploads/2016/05/Free-coffee-wallpaper-hd.jpg" alt="Imagen de café" loading="lazy" />
-      <p>Disfruta del aroma y sabor de nuestro café recién preparado.</p>
-    </section>
+      <div class="hero-img">
+        <img src="https://www.hojaldreria.com/images/descubra-los-secretos-del-cafe-artesanal.jpeg" alt="Taza de café artesanal" loading="lazy">
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contáctanos</h2>
-      <form id="contactForm" novalidate>
-        <label for="name">Nombre</label>
-        <input id="name" name="name" type="text" placeholder="Tu nombre" required />
-
-        <label for="email">Correo</label>
-        <input id="email" name="email" type="email" placeholder="Tu correo" required />
-
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </section>
-
-    <footer>
-      <p>© 2025 Café Nicolás</p>
-    </footer>
+  <!-- SECCIÓN NUESTRA HISTORIA -->
+<section class="about">
+  <div class="container about-content">
+    <div class="about-text">
+      <h2>Nuestra historia</h2>
+      <p>Desde 2010, en <strong>Café Niruth</strong> creemos que el buen café une a las personas.  
+      Tostamos cada grano con cuidado, priorizando la calidad, el aroma y la experiencia.  
+      Nuestro compromiso es ofrecerte una taza que cuente una historia.</p>
+      <a href="#contacto" class="btn-secondary">Conócenos más</a>
+    </div>
+    <div class="about-img">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.0XyeIDYOdkUoQ8GHHCjpcQHaFj?pid=Api&P=0&h=180" alt="Equipo tostando café" loading="lazy">
+    </div>
   </div>
+</section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+<!-- SECCIÓN PRODUCTOS -->
+<section class="products" id="menu">
+  <div class="container">
+    <h2>Nuestros productos</h2>
+    <div class="product-cards">
+      <div class="product-card">
+        <img src="https://www.cafeygourmet.com/wp-content/uploads/2023/11/expresso2.jpeg" alt="Café Espresso" loading="lazy">
+        <h3>Espresso</h3>
+        <p>Intenso, aromático y con el balance perfecto entre fuerza y suavidad.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://polleriaslagranja.com/wp-content/uploads/2022/10/La-Granja-Real-Food-Chicken-Capuccino.png" alt="Capuccino" loading="lazy">
+        <h3>Capuccino</h3>
+        <p>Suave mezcla de café, leche espumosa y una pizca de cacao.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.edeka.de/uploads/rezepte/rez_edeka-cold-brew-rezept-a-d-1-1.jpg" alt="Cold Brew" loading="lazy">
+        <h3>Cold Brew</h3>
+        <p>Preparado en frío por 16 horas para extraer su sabor más puro y refrescante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- PIE DE PÁGINA -->
+ <footer class="site-footer" id="contacto">
+  <div class="container footer-content">
+    <div class="footer-info">
+      <h3>Café Niruth</h3>
+      <p>El arte del café artesanal desde 2010.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"></a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2025 Café Niruth — Todos los derechos reservados ☕</p>
+</footer>
+
 
